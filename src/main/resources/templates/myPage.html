@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security4"
+      lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <title>my page</title>
+</head>
+<body>
+<header>
+    <!--/*@thymesVar id="username" type="java.lang.String"*/-->
+    <span sec:authentication="${principal.user.username}">booo</span>さんログイン中。
+    <a th:href="@{/logout}" class="btn btn-default btn-xs">ログアウト</a>
+</header>
+
+<h1>マイページ</h1>
+
+<a href=""><img src="img/face.png" alt="" height="230" width="230" /></a>
+
+
+
+</body>
+</html>

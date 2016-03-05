@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8"/>
+<html  xmlns:th="http://www.thymeleaf.org"  lang="ja">
+  <head>
+    <meta  content="text/html; charset=UTF-8"  http-equiv="content-type" />
     <title>Matsuya</title>
-</head>
-<body>
-    <h1>Index Page</h1>
+    <link  rel="stylesheet"  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+       th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.min.css}" />
 
-</body>
+    <link  rel="stylesheet"  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+
+       th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap-theme.min.css}" />
+  </head>
+  <body>
+
+  <header>
+
+  <form th:action="@{loginForm}">
+    <button class="btn btn-primary" type="submit">ログイン</button>
+  </form>
+  <form >
+    <button class="btn btn-info" type="submit">新規登録</button>
+  </form>
+
+  </header>
+  <h1>松屋</h1>
+    <h2>会記をシェアしましょう</h2>
+
+  <!-- TODO 画像の一覧を表示させる -->
+
+
+
+  </body>
 </html>

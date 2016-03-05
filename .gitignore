@@ -1,8 +1,12 @@
 /bin/
 /nbproject/private/
+/DB/
+/DB/tmp/*
 /build/
 .gradle
 .gradle/*
 .idea
 .idea/*
 *.iml
+/TestDataGenSrc
+/UtilModule
