@@ -8,8 +8,6 @@ import lombok.ToString;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Date;
-import java.util.List;
 
 /**
  * Created by Takumi on 2016/05/04.
